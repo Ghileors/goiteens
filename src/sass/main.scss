@@ -1,0 +1,16 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import './utils/vars.scss';
+@import './utils/normalize.scss';
+@import './utils/base.scss';
+@import './utils/visually-hidden.scss';
+@import './utils/typography.scss';
+@import './utils/container.scss';
+@import 'header.scss';
+@import 'hero.scss';
+@import 'news.scss';
+@import 'direction.scss';
+@import 'teaching-methods.scss';
+@import 'training-structure.scss';
+@import 'footer.scss';
