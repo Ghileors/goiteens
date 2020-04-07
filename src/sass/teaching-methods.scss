@@ -1,0 +1,39 @@
+.teaching-methods {
+  padding: 60px 0;
+}
+
+.teaching-methods__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(233, 172, 58, 0.5);
+}
+
+.teaching-methods__icon {
+  width: 34px;
+  height: 34px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .teaching-methods__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teaching-methods__item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 202px;
+
+    &:nth-child(2n - 1) {
+      margin-right: 88px;
+    }
+  }
+}
