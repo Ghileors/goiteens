@@ -1,0 +1,115 @@
+.news {
+  padding: 60px 0;
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__preview:first-child {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 26px;
+    height: 20px;
+    background: center / contain no-repeat url(../images/svg/top-quotes.svg);
+  }
+}
+
+.training-program__wrapper {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  border-radius: 5px;
+  background-color: #824fe3;
+  margin-top: 42px;
+  padding-top: 43px;
+  padding-right: 26px;
+  padding-bottom: 28px;
+  padding-left: 24px;
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60px;
+    height: 2px;
+    background-color: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news__preview:first-child::before {
+    top: -12px;
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .news {
+    padding: 66px 0;
+  }
+
+  .training-program__wrapper {
+    width: 620px;
+    height: 183px;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-right: 109px;
+    padding-bottom: 44px;
+    padding-left: 79px;
+
+    &::before {
+      top: 50%;
+      left: 52px;
+      transform: translate(0, -50%);
+      width: 2px;
+      height: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .news {
+    padding-top: 116px;
+    padding-bottom: 108px;
+  }
+
+  .news__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .news__item:first-child {
+    margin-right: 113px;
+  }
+
+  .training-program__wrapper {
+    position: relative;
+    width: 1298px;
+    height: 228px;
+    border-radius: 3px;
+    margin-top: 114px;
+    padding-top: 70px;
+    padding-right: 256px;
+    padding-bottom: 66px;
+    padding-left: 228px;
+
+    &::before {
+      top: 50%;
+      left: 202px;
+      transform: translate(0, -50%);
+      width: 2px;
+      height: 86px;
+    }
+  }
+}

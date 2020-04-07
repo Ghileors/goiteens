@@ -124,7 +124,7 @@
   }
 }
 
-@media screen and (min-width: 695px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1299px) {
   .nav {
     display: flex;
     justify-content: space-between;
@@ -138,7 +138,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .nav {
     padding-top: 30px;
     padding-right: 50px;
