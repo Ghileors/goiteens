@@ -13,12 +13,59 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: rgba(233, 172, 58, 0.5);
 }
 
 .teaching-methods__icon {
   width: 34px;
   height: 34px;
+}
+
+/* ICON STYLES */
+.icon-world__bg,
+.icon-target__bg {
+  background-color: rgba(252, 177, 46, 0.2);
+}
+
+.icon-world {
+  fill: #fcb12e;
+}
+
+.icon-handshake__bg,
+.icon-docs__bg {
+  background-color: rgba(253, 102, 49, 0.2);
+}
+
+.icon-handshake {
+  fill: #fd6631;
+}
+
+.icon-peace__bg {
+  background-color: rgba(131, 81, 227, 0.2);
+}
+
+.icon-peace {
+  fill: #8351e3;
+}
+
+.icon-money__bg,
+.icon-idea__bg {
+  background-color: rgba(13, 175, 164, 0.2);
+}
+
+.icon-money {
+  fill: #0dafa4;
+}
+
+.icon-idea {
+  fill: #0dafa4;
+}
+
+.icon-docs {
+  fill: #fd6631;
+}
+
+.icon-target {
+  fill: #fcb12e;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1299px) {
@@ -30,10 +77,33 @@
   .teaching-methods__item {
     display: flex;
     flex-wrap: wrap;
-    max-width: 202px;
+    flex: 0 calc(50% - 88px);
 
     &:nth-child(2n - 1) {
       margin-right: 88px;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .teaching-methods__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .teaching-methods__item {
+    flex: 0 calc(25% - 100px);
+
+    &:not(:nth-child(4n)) {
+      margin-right: 100px;
+    }
+
+    &:nth-child(n + 5) {
+      margin-bottom: 0;
     }
   }
 }

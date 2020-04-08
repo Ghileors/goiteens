@@ -1,0 +1,22 @@
+.training-structure {
+  padding-bottom: 60px;
+}
+
+.training-structure__item {
+  width: 280px;
+  height: 260px;
+  padding: 18px;
+  border-radius: 0 20px 0 20px;
+  background-color: #f6ead0;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.training-structure__item--wrapper {
+  padding-top: 40px;
+  padding-right: 54px;
+  padding-left: 26px;
+  border: dashed black;
+}
